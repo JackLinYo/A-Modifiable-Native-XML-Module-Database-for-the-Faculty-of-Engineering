@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+
+<Department>
+
+
+<course>
+ <moduleName>Foundations of Object Oriented Programming</moduleName>
+ <moduleNumber>COM6471</moduleNumber>
+ <credit>15</credit>
+</course>
+
+<course>
+<moduleName>Foundations of Object Oriented Programming</moduleName>
+<moduleNumber>COM6471</moduleNumber>
+<credit>15</credit>
+</course>
+
+<course>
+<moduleName>Network and Internetwork Architectures</moduleName>
+<moduleNumber>COM6063</moduleNumber>
+<credit>10</credit>
+</course>
+
+<course>
+<moduleName>Human Centred Systems Design</moduleName>
+<moduleNumber>COM6222</moduleNumber>
+<credit>20</credit>
+</course>
+
+<course>
+<moduleName>Professional Issues</moduleName>
+<moduleNumber>COM6650</moduleNumber>
+<credit>10</credit>
+</course>
+
+<course>
+<moduleName>Advanced Java Programming</moduleName>
+<moduleNumber>COM6102</moduleNumber>
+<credit>15</credit>
+</course>
+
+<course>
+<moduleName>Web Technologies</moduleName>
+<moduleNumber>COM6517</moduleNumber>
+<credit>15</credit>
+</course>
+
+<course>
+<moduleName>Cloud Computing</moduleName>
+<moduleNumber>COM6519</moduleNumber>
+<credit>15</credit>
+</course>
+
+<course>
+<moduleName>Maxi Project</moduleName>
+<moduleNumber>COM6011</moduleNumber>
+<credit>20</credit>
+</course>
+
+
+</Department>

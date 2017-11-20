@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+
+
+<FacultyOfEngineering>
+
+<Department>
+
+<ComputerScience>
+
+<Major>
+
+<Course>
+<ModuleName>Foundations of Object Oriented Programming</ModuleName>
+<ModuleNumber>COM6471</ModuleNumber>
+<Credit>15</Credit>
+</Course>
+
+</Major>
+
+</ComputerScience>
+
+</Department>
+
+</FacultyOfEngineering>

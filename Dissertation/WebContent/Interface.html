@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Modifiable Module for the Faculty of Engineering</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<LINK REL="stylesheet" TYPE="text/css">
+    
+    <style>
+    h1{text-align:center; font-size:24px;}
+    body {
+	background: #394864;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6em;
+    }
+  h1,h2 {font-family: 'Lato', sans-serif;font-weight: 300;color: white;font-size:20px}
+  h1 {font-size: 30px;}
+  label{font-family: 'Lato', sans-serif;font-weight: 300;color: white;font-size:16px;}
+    </style>
+
+
+<script>
+function showMajor(){
+
+		var selectBox = document.getElementById('department');
+
+		/*in order to take the option value that has been selected from the users*/
+    	var userInput = selectBox.options[selectBox.selectedIndex].value;
+    	
+		if(userInput=='CS'){
+			//document.getElementById('majorFromCS').style.visibility="visible";
+			//document.getElementById('majorFromAE').style.visibility='hidden';
+			
+			document.getElementById('majorFromCS').style.display='block';
+			document.getElementById('majorFromAE').style.display='none';
+		}else if(userInput=='AE'){
+			//document.getElementById('majorFromAE').style.visibility="visible";
+			//document.getElementById('majorFromCS').style.visibility='hidden';
+		   
+			document.getElementById('majorFromAE').style.display='block';
+			document.getElementById('majorFromCS').style.display='none';
+			
+		}else{
+			//document.getElementById('majorFromAE').style.visibility='hidden';
+			//document.getElementById('majorFromCS').style.visibility='hidden';
+			document.getElementById('majorFromAE').style.display='none';
+			document.getElementById('majorFromCS').style.display='none';
+			
+		}	
+			 return false;   
+}
+
+
+</script>
+
+</head>
+
+
+<body>
+
+<nav class="navbar navbar-inverse">
+
+    <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+
+        </button>
+        <a href="Index.html" ><i class="glyphicon glyphicon-home navbar-brand"  id="homeicon"></i></a>
+    </div>
+
+    <div class="container-fluid">
+      
+    <ul class="nav navbar-nav navbar-left">
+            <li class="active"><a href="Interface.html">Upload page</a></li>
+            <li><a href="search.html">Search Page</a></li> 
+    </ul>
+    
+    </div>
+</nav>
+
+<div class="container">
+<h1>Dissertation Project</h1>
+
+<form>
+<h2>Faculty Of Engineering</h2>
+<hr>
+
+<fieldset>
+
+
+<div >
+<label class="col-md-4 control-label" >Department</label>
+<select id="department" name="department" class="form-control selectpicker" onchange="return showMajor();" >
+          <option value="00">Please select the department</option>
+          <option value="AE">Aerospace Engineering</option>
+          <option value="CS">Computer Science </option>
+         <!--<option value="EE">Electronic and Electrical Engineering</option>  -->
+         <!--<option value="MSE">Materials Science and Engineering </option>  --> 
+</select>
+</div>
+
+<div id="majorFromCS" style="display:none;" >
+<br>
+<label class="col-md-4 control-label">Major in Computer Science</label>
+<select id="selectCSmajor" name="CSmajor" class="form-control selectpicker">
+          <option value="00">Please select the department of module</option>
+          <option value="ACS">Advanced Computer Science</option>
+          <option value="SSIT">Software System and Internet Technology</option>
+          <option value="ASE">Advanced Software Engineering</option>
+</select>
+</div>
+
+<div id="majorFromAE" style="display:none;" >
+<br>
+<label class="col-md-4 control-label">Major in Aerospace Engineering</label>
+<select id="selectAEmajor" name="AEmajor" class="form-control selectpicker">
+          <option value="00">Please select the department of module</option>
+          <option value="AM">MSc (Eng) Aerospace Materials</option>
+          <option value="ACSEIM">MSc Advanced Control and Systems Engineering with Industrial Management</option>
+          <option value="CIR">MSC Computational Intelligence and Robotics</option>
+          <option value="ACSE">MSc Advanced Control and Systems Engineering</option>
+          <option value="MAMM">MSc Advanced Materials Manufacturing</option>
+</select>
+</div>
+
+<br>
+
+<label class="col-md-4 control-label">Module Name</label>
+<input id="" name="" placeholder="Please enter the module number"class="form-control" type="text">
+
+<br>
+
+<div>
+<label class="col-md-4 control-label">Module Number</label>
+<input id="" name="" placeholder="Please enter the module number"class="form-control" type="text">
+</div>
+
+<br>
+
+<div>
+<label class="col-md-4 control-label">Credits</label>
+<select id="credits" name="moduleCredits" class="form-control selectpicker">
+          <option value="00">Please select the credits of module</option>
+          <option value="five">5</option>
+          <option value="ten">10</option>
+          <option value="fifteen">15</option>
+          <option value="twenty">20</option>
+</select>
+</div>
+
+<br>
+
+<div>
+<label class="col-md-4 control-label">Module Description</label>
+<textarea rows="4" cols="50" class="form-control" >
+Any extra information about the module.... 
+</textarea>
+</div>
+
+<br>
+
+ <button type="submit" class="btn btn-warning" name="next" onClick="return checkEmptyBox()">Send
+                        <span class="glyphicon glyphicon-send"></span></button>
+
+</fieldset>
+</form>
+</div>
+
+
+
+
+
+</body>
+</html>
